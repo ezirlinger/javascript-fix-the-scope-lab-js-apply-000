@@ -1,5 +1,4 @@
 var animal = 'dog'
-animal = 'cat'
 
 function myAnimal() {
   return animal
@@ -14,7 +13,7 @@ function yourAnimal() {
 
 // Output needs to be 415.  Moved const two into the scope (before return) and declared n = 413 as a parameter
 function add2(n = 413) {
-  const two = 2;
+  const two = 2
   return n + two
 // Feel free to move things around!
 }
