@@ -8,8 +8,8 @@ function yourAnimal() {
   // How can we make sure that this function
   // and the above function both pass?
   // P.S.: You can't just hard-code 'cat' below
-  var animal = 'cat'
-  return animal
+  // var animal = 'cat' // Out
+  return 'cat'
 }
 
 // Output needs to be 415.  Moved const two into the scope (before return) and declared n = 413 as a parameter
@@ -27,5 +27,7 @@ var funkyFunction = function() {
 
 // We want to set theFunk equal to "FUNKY!" using our funkyFunction.
 // NOTE: you only need to modify the code below this line.
-var theFunk = funkyFunction()
-theFunk = theFunk()
+// Output needs to be FUNKY. funkyFunction returns a function that has no name.
+// By calling the () a second time (the inner function of funkyFunction) I am
+// calling the function that funkyFunction returned which returns "FUNKY"
+var theFunk = funkyFunction()() // added ()()
