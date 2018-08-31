@@ -8,8 +8,10 @@ function yourAnimal() {
   // How can we make sure that this function
   // and the above function both pass?
   // P.S.: You can't just hard-code 'cat' below
-  // var animal = 'cat' // Out
-  return 'cat'
+  var animal = 'cat' // Output is 'cat'.  var animal = dog is global scope.
+  // var animal = 'cat' in the function is the local scope and overrides global.
+  // I just want to say that I got this right early and forgot to command + S.  Thus the next many hours.
+  return animal
 }
 
 // Output needs to be 415.  Moved const two into the scope (before return) and declared n = 413 as a parameter
